@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 PixelAndroidLibrary for Android Studio
 ==========
 
