@@ -1,5 +1,5 @@
 
-PixelAndroidLibrary for Android Studio
+Android Library for PIXEL:LED ART for Android Studio
 ==========
 
 Includes 3 Libraries and Sample App
