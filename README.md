@@ -3,14 +3,14 @@ PixelAndroidLibrary for Android Studio
 ==========
 
 Includes 3 Libraries and Sample App
-=======
-PixelHelloWord - Sample App
-IOIOLibAndroid - Library
-IOIOLibBT - Library
-IOIOLIbAccessory - Library
-==============
 
-A very simply example which writes an image of an Apple to the LED Matrix. Use this code to get started and then build off it.
+PixelHelloWord - Sample App // A very simply example which writes an image of an Apple to the LED Matrix. Use this code to get started and then build off it.
+
+IOIOLibAndroid - Library
+
+IOIOLibBT - Library
+
+IOIOLIbAccessory - Library
 
 Step 1. Add the JitPack repository to your build file
 
