@@ -28,4 +28,4 @@ Add it in your root build.gradle at the end of repositories:
 	dependencies {
 	        implementation 'com.github.alinke:PixelAndroidLibrary:1.0.0'
 	}
->>>>>>> 2f0afd51afb5a499a91fa9521c3d9620d04bc103
+
