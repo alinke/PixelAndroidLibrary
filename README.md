@@ -28,3 +28,5 @@ Add it in your root build.gradle at the end of repositories: (do not add under b
 	dependencies {
 	        implementation 'com.github.alinke:PixelAndroidLibrary:1.0.0'
 	}
+
+[![](https://jitpack.io/v/alinke/PixelAndroidLibrary.svg)](https://jitpack.io/#alinke/PixelAndroidLibrary)
