@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">PIXEL Hello World</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="intro">After a short delay, an Apple should be displayed on the Pixel LED frame\n\nIf no Apple is deplayed, then ensure you have Bluetooth paired to the PIXEL Frame\n\nFrom Android settings, go to Bluetooth, and then pair to PIXEL using code: 0000</string>
+    
+
+</resources>

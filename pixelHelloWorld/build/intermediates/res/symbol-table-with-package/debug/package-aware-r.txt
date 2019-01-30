@@ -1,0 +1,10 @@
+com.ledpixelart.pixelhelloworld
+drawable apple
+drawable icon
+id title
+layout main
+string app_name
+string hello_world
+string intro
+style AppTheme
+xml accessory_filter

@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [:iOIOLibAccessory] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAccessory/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:iOIOLibBT] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibBT/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:iOIOLibAndroid] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAndroid/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:3:7-48
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:3:74-99
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:3:49-73
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:6:7-86
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:6:24-67
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:7:7-92
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:7:24-73
+uses-permission#android.permission.INTERNET
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:8:7-85
+MERGED from [:iOIOLibAndroid] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAndroid/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:iOIOLibAndroid] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAndroid/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:8:24-66
+application
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:10:7-24:21
+	android:label
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:10:50-82
+	android:icon
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:10:20-49
+uses-library#com.android.future.usb.accessory
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:12:13-102
+	android:required
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:12:75-99
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:12:27-74
+activity#com.ledpixelart.pixelhelloworld.PixelHelloWorld
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:14:13-23:24
+	android:launchMode
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:14:55-86
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:14:23-54
+intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:15:21-19:31
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:16:19-95
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:16:27-92
+action#android.intent.action.MAIN
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:17:19-71
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:17:27-68
+category#android.intent.category.LAUNCHER
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:18:22-81
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:18:32-79
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:21:15-22:78
+	android:resource
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:22:35-75
+	android:name
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:21:26-91
+uses-sdk
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+MERGED from [:iOIOLibAccessory] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAccessory/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:iOIOLibAccessory] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibAccessory/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:iOIOLibBT] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibBT/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:iOIOLibBT] /Users/al/Documents/workspace 4/PixelHelloWord/iOIOLibBT/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		ADDED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+		INJECTED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12 reason: ioio.lib has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12 reason: ioio.lib has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/al/Documents/workspace 4/PixelHelloWord/pixelHelloWorld/src/main/AndroidManifest.xml:2:1-25:12 reason: ioio.lib requested WRITE_EXTERNAL_STORAGE

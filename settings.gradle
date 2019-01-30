@@ -1,0 +1,4 @@
+include ':iOIOLibAndroid'
+include ':iOIOLibAccessory'
+include ':iOIOLibBT'
+include ':pixelHelloWorld'
