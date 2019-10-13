@@ -83,6 +83,9 @@ public interface RgbLedMatrix extends Closeable {
 		ADAFRUIT_64x32_ColorSwap(64,32),
 		ADAFRUIT_64x64_ColorSwap(64,64),
 		SEEEDSTUDIO_32x32_ColorSwap(32,32),  //some customers got a pixel guts kit that has blue and green swapped
+		SRYLED_P25_64x32(64,32),
+		SRYLED_P25_128x32(128,32),
+		SRYLED_P25_64x64(64,64),
 		ALIEXPRESS_RANDOM1_32x32(32,32);  //panel Wilton Wong got from Ali Express and figured out the pixel mapping, have are laid out as two 8x64 panels chained together
 		
 		public final int width;

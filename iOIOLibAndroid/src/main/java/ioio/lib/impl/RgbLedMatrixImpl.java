@@ -269,10 +269,22 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 			
 		case ALIEXPRESS_RANDOM1_32x32:	
 			convertAliexpress32x32_Random1(rgb565, frame_);
-			break;	
-		
+			break;
 
-		default:
+		case SRYLED_P25_64x32:
+			convertSRYLED_P25_64x32(rgb565, frame_);
+			break;
+
+		case SRYLED_P25_128x32:
+			convertSRYLED_P25_128x32(rgb565, frame_);
+			break;
+
+		case SRYLED_P25_64x64:
+			convertSRYLED_P25_64x64(rgb565, frame_);
+			break;
+
+
+			default:
 			throw new IllegalStateException("This format is not supported");
 		}
 
@@ -377,6 +389,18 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 	
 	private static void convertAliexpress32x32_Random1(short[] rgb565, byte[] dest) {
 		convertAliexpress_Random1(rgb565, 32, dest); 
+	}
+
+	private static void convertSRYLED_P25_64x32(short[] rgb565, byte[] dest) {
+		convertSRYLED_P25(rgb565, 64,16 , dest);
+	}
+
+	private static void convertSRYLED_P25_128x32(short[] rgb565, byte[] dest) {
+		convertSRYLED_P25(rgb565, 128, 16, dest);
+	}
+
+	private static void convertSRYLED_P25_64x64(short[] rgb565, byte[] dest) {
+		convertSRYLED_P25(rgb565, 64 ,16, dest);
 	}
 	
 	/*private static void convertAdafruit32x16(short[] rgb565, byte[] dest) {
@@ -607,6 +631,53 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 		}
 	}
 }
+
+	private static void convertSRYLED_P25(short[] rgb565, int width, int numLogicalRows, byte[] dest) { //red line is fine, green and blue lines are swapped vs. Adafruit
+		final int pairOffset = 16;
+		final int height = rgb565.length / width;
+		final int subframeSize = rgb565.length / 2;
+
+		for (int x = 0; x < width; ++x) {
+			for (int y = 0; y < height; ++y) {
+				if (y % (pairOffset * 2) >= pairOffset) continue;
+
+				// This are the two indices of the pixel comprising a dot-pair in the input.
+				int inputIndex0 = y * width + x;
+				int inputIndex1 = (y + pairOffset) * width + x;
+
+				short color0 = rgb565[inputIndex0];
+				// Take the top 3 bits of each {r,g,b}
+				int r0 = (color0 >> 13) & 0x7;
+				int b0 = (color0 >> 8) & 0x7; //swapping blue and green
+				int g0 = (color0 >> 2) & 0x7;
+
+				short color1 = rgb565[inputIndex1];
+				// Take the top 3 bits of each {r,g,b}
+				int r1 = (color1 >> 13) & 0x7;
+				int b1 = (color1 >> 8) & 0x7; //swapping blue and green
+				int g1 = (color1 >> 2) & 0x7;
+
+				for (int subframe = 0; subframe < 3; ++subframe) {
+					int dotPair =
+							(r0 & 1) << 5
+									| (g0 & 1) << 4
+									| (b0 & 1) << 3
+									| (r1 & 1) << 2
+									| (g1 & 1) << 1
+									| (b1 & 1) << 0;
+					int indexWithinSubframe = mapAdafruitIndex(x, y, width, height, numLogicalRows);
+					int indexWithinOutput = subframe * subframeSize + indexWithinSubframe;
+					dest[indexWithinOutput] = (byte) dotPair;
+					r0 >>= 1;
+					g0 >>= 1;
+					b0 >>= 1;
+					r1 >>= 1;
+					g1 >>= 1;
+					b1 >>= 1;
+				}
+			}
+		}
+	}
 	
 	private static void convertAliexpress_Random1(short[] rgb565, int width, byte[] dest) {
 		final int height = rgb565.length / width;
@@ -865,6 +936,7 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 		case SEEEDSTUDIO_32x32_NEW:
 		case SEEEDSTUDIO_32x32_ColorSwap:
 		case ADAFRUIT_64x32:
+		case SRYLED_P25_64x32:
 		case ADAFRUIT_64x32_ColorSwap:
 		case ALIEXPRESS_RANDOM1_32x32:
 			return 2;
@@ -873,8 +945,10 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 		case SEEEDSTUDIO_32x64:
 		case SEEEDSTUDIO_2_MIRRORED:
 		case ADAFRUIT_64x64:
+		case SRYLED_P25_64x64:
 		case ADAFRUIT_64x64_ColorSwap:
 		case ADAFRUIT_128x32:
+		case SRYLED_P25_128x32:
 		case ADAFRUIT_32x128:
 		case ADAFRUIT_128x16:
 			return 4; 
@@ -921,7 +995,10 @@ class RgbLedMatrixImpl extends AbstractResource implements RgbLedMatrix {
 		case ADAFRUIT_64x64_ColorSwap:
 		case ADAFRUIT_128x32:
 		case ADAFRUIT_32x128:
-		
+		case SRYLED_P25_64x32:
+		case SRYLED_P25_64x64:
+		case SRYLED_P25_128x32:
+
 			return 16;
 
 		default:
