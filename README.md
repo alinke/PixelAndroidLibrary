@@ -26,7 +26,7 @@ Add it in your root build.gradle at the end of repositories: (do not add under b
   Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.alinke:PixelAndroidLibrary:2.0.0'
+	        implementation 'com.github.alinke:PixelAndroidLibrary:2.1.0'
 	}
 
 [![](https://jitpack.io/v/alinke/PixelAndroidLibrary.svg)](https://jitpack.io/#alinke/PixelAndroidLibrary)
