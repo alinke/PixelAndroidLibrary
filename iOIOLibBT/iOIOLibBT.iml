@@ -123,5 +123,8 @@
     <orderEntry type="jdk" jdkName="Android API 10 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
   </component>
 </module>

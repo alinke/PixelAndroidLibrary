@@ -126,5 +126,8 @@
     <orderEntry type="library" name="Gradle: maps-android-15" level="project" />
     <orderEntry type="library" name="Gradle: usb-android-15" level="project" />
     <orderEntry type="library" name="Gradle: effects-android-15" level="project" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
   </component>
 </module>

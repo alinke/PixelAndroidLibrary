@@ -139,5 +139,14 @@
     <orderEntry type="library" name="Gradle: maps-android-17" level="project" />
     <orderEntry type="library" name="Gradle: usb-android-17" level="project" />
     <orderEntry type="library" name="Gradle: effects-android-17" level="project" />
+    <orderEntry type="module" module-name="iOIOLibBT" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAccessory" />
+    <orderEntry type="module" module-name="iOIOLibBT" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAccessory" />
+    <orderEntry type="module" module-name="iOIOLibBT" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" />
+    <orderEntry type="module" module-name="iOIOLibAccessory" />
   </component>
 </module>
